@@ -1,3 +1,2 @@
-# eterniaserver.github.io
-Site do EterniaServer
-oi
+# eterniaserver.com.br
+Site do EterniaServer, ip: jogar.eterniaserver.com.br
