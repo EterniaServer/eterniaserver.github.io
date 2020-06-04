@@ -144,10 +144,10 @@ header nav ul li a.active {
 
 .slide-text {
     color: #d5d5d5;
-    font-size: 20px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
+    bottom: 10%;
+    font-size: 2vw;
     text-align: center;
     left: 50%;
     margin-right: -50%;
@@ -193,8 +193,8 @@ header nav ul li a.active {
     width: 100%;
     position: fixed;
     bottom: 0;
-    left: 0;
     padding: 10px 10px 10px 10px;
+    font-size: 1vw;
     color: #FFFFFF;
 }
 /* Final da configuração do rodape */
