@@ -70,7 +70,28 @@ header nav ul li a.active {
     display: block;
 }
 
+.menu-toggle {
+    color: #FFFFFF;
+    float: right;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 0 20px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    header nav {
+        display: none;
+    }
+}
 /* Final da configuração do menu */
+
 /* Início da configuração do slide */
 .slide {
     position: relative;
