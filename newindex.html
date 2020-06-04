@@ -5,55 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="EterniaServer um dos melhores servers de survival, venha jogar.">
     <link rel="stylesheet" href="css/newstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="favicon.ico"/>
     <title>EterniaServer</title>
 </head>
 <body>
-    <header>
-        <nav class="menu">
-            <img class="logo" alt="" src="images/logo.png">
-            <p>EterniaServer</p>
-            <a href="pages/regras.html">Regras</a>
-            <a href="pages/doar.html">Doar</a>
-            <a href="pages/contatos.html">Contatos</a>
-            <a class="active" href="index.html">Início</a>
-        </nav>
-    </header>
-    <section>
-        <div class="slide">
-            <div class="mySlides fade">
-                <div class="slide-text">Sua aventura começa aqui! Jogue com outros jogadores em um servidor tranquilo.</div>
-                <img alt="" src="imgs/slide1.png" style="width:100%">
+    <article>
+        <header>
+            <div class="logo">
+                EterniaServer
             </div>
-            <div class="mySlides fade">
-                <div class="slide-text">Deixe sua imaginação solta. Nós não temos nenhum bloco removido do jogo.</div>
-                <img alt="" src="imgs/slide2.png" style="width:100%">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="pages/contatos.html">Contatos</a></li>
+                    <li><a href="pages/doar.html">Doar</a></li>
+                    <li><a href="pages/regras.html">Regras</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        </header>
+        <main>
+            <section>
+                <div class="slide">
+                    <div class="mySlides fade">
+                        <div class="slide-text">Sua aventura começa aqui! Jogue com outros jogadores em um servidor tranquilo.</div>
+                        <img alt="" src="imgs/slide1.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="slide-text">Deixe sua imaginação solta. Nós não temos nenhum bloco removido do jogo.</div>
+                        <img alt="" src="imgs/slide2.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="slide-text">Faça parte da família EterniaServer! Uma vez nela, você não irá querer sair.</div>
+                        <img alt="" src="imgs/slide3.png" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </section>
+            <section>
+                <div class="ip">
+                    Venha jogar conosco, <b>jogar.eterniaserver.com.br</b> e com mais outros <span data-playercounter-ip="jogar.eterniaserver.com.br">Offline</span> jogadores online.
+                </div>
+            </section>
+            <section>
+                <div class="qualidades">
+                    <img class="cards" src="imgs/features1.png" alt="">
+                    <img class="cards" src="imgs/features2.png" alt="">
+                    <img class="cards" src="imgs/features3.png" alt="">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="rodape">
+                © 2020 Copyright: EterniaServer
             </div>
-            <div class="mySlides fade">
-                <div class="slide-text">Faça parte da família EterniaServer! Uma vez nela, você não irá querer sair.</div>
-                <img alt="" src="imgs/slide3.png" style="width:100%">
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-    </section>
-    <section>
-        <div class="ip">
-            Venha jogar conosco, <b>jogar.eterniaserver.com.br</b> e com mais outros <span data-playercounter-ip="jogar.eterniaserver.com.br">Offline</span> jogadores online.
-        </div>
-    </section>
-    <section>
-        <div class="qualidades">
-            <img class="cards" src="imgs/features1.png" alt="">
-            <img class="cards" src="imgs/features2.png" alt="">
-            <img class="cards" src="imgs/features3.png" alt="">
-        </div>
-    </section>
-    <footer>
-        <div class="rodape">
-            © 2020 Copyright: EterniaServer
-        </div>
-    </footer>
+        </footer>
+    </article>
     <script src="js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
 </body>
