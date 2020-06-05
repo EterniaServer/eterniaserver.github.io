@@ -12,6 +12,7 @@
 }
 
 .w3-button {
+    height: 100%;
     border: none;
     display: inline-block;
     padding: 8px 16px;
