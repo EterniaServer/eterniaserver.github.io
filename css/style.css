@@ -1,90 +1,70 @@
-.carousel-item {
-    height: auto;
-    min-height: 350px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+* {
+    margin: 0;
+    font-family: "Lucida C", monospace;
 }
 
-#resumo {
+body, html {
+    display: grid;
+    background: #333333;
+    width: 100%;
+    height: 100%;
+}
+
+article {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+}
+
+header {
+    top: 0;
+    left: 0;
+    background-color: #2b2b2b;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Início da configuração do ip */
+.ip {
+    font-size: 3vh;
+    border: 1px solid;
+    display: block;
+    color: #74b16f;
+    background-color: #2b2b2b;
+    border-radius: 6px;
+    padding: 10px 10px 10px 10px;
     text-align: center;
+    margin: auto;
+}
+/* Final da configuração do ip */
+.qualidades {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.main-f-color {
-    color: rgb(112, 215, 94);
-    transition: 0.4s;
+.cards {
+    margin-top: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 6%;
 }
 
-.main-f-color:hover {
-    box-shadow: 0 0 7px 2px rgb(65, 179, 45);
-    color: rgb(65, 179, 45);
-    transition: 0.4s;
+.cards:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+/* Final da configuração das qualidades */
 
-.textgray {
-    color: gray;
-}
-
-.textblack {
-    color: black;
-}
-
-.textblack {
-    color: black;
-}
-
-
-section div {
+/* Início da configuração do rodape */
+.rodape {
+    background-color: #2b2b2b;
     text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 10px 10px 10px 10px;
+    font-size: 2vh;
+    color: #FFFFFF;
 }
-
-.center {
-    text-align: center;
-}
-
-.left {
-    text-align: left;
-}
-
-.featureboxes {
-    border: 0 solid white;
-    transition: 0.15s;
-    width: auto;
-    height: auto;
-    text-align: center;
-}
-
-.featureboxes:hover {
-    transition: 0.15s;
-    transform: scale(1.01);
-    border-radius: 3px;
-    text-align: center;
-}
-
-.img-featureboxes {
-    max-width: 100px;
-    max-height: 100px;
-    width: auto;
-    height: auto;
-    text-align: center;
-}
-
-.img-news {
-    max-width: 700px;
-    max-height: 350px;
-}
-
-.medias {
-    color: gray;
-    text-decoration: none;
-    text-align: center;
-}
-
-.medias:hover
-{
-    color: gray;
-    text-decoration: none;
-    cursor: pointer;
-}
+/* Final da configuração do rodape */

@@ -1,249 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="EterniaServer um dos melhores servers de survival, venha jogar.">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/24b38c7cb1.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="shortcut icon" href="favicon.ico"/>
-    <title class='webistetitle'>EterniaServer</title>
+    <title>EterniaServer</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a href="index.html"><img alt="" src="images/logo.png" style="width: 50px; padding-right: 10px;"></a>
-        <a class="navbar-brand" href="index.html">EterniaServer</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Início
-                        <span class="sr-only">Atual</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="subpages/doacao.html">Doações</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="subpages/webmap.html">Mapa</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="subpages/rules.html">Regras</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Forums</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Sobre
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="subpages/votar.html">Votar</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="subpages/contatos.html">Contato</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-</nav>
-<header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active" style="background-image: url(images/slide1.png)">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3 class="display-4">Sua aventura começa agora!</h3>
-                    <p class="lead">Jogue com outros jogadores em um servidor tranquilo.</p>
+    <article>
+        <header>
+            <div class="w3-bar">
+                <a href="index.html" class="w3-bar-item w3-button active">Início</a>
+                <a href="pages/contatos.html" class="w3-bar-item w3-button w3-hide-small">Contatos</a>
+                <a href="pages/doar.html" class="w3-bar-item w3-button w3-hide-small">Doar</a>
+                <a href="pages/regras.html" class="w3-bar-item w3-button w3-hide-small">Regras</a>
+                <a href="pages/votar.html" class="w3-bar-item w3-button w3-hide-small">Votar</a>
+                <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="changeState()">&#9776;</a>
+            </div>
+            <div id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+                <a href="index.html" class="w3-bar-item w3-button">Início</a>
+                <a href="pages/contatos.html" class="w3-bar-item w3-button">Contatos</a>
+                <a href="pages/doar.html" class="w3-bar-item w3-button">Doar</a>
+                <a href="pages/regras.html" class="w3-bar-item w3-button">Regras</a>
+                <a href="pages/votar.html" class="w3-bar-item w3-button">Votar</a>
+            </div>
+        </header>
+        <main>
+            <section class="slide">
+                <div class="mySlides fade">
+                    <img alt="" src="imgs/slide1.png" style="width:100%">
                 </div>
-            </div>
-            <div class="carousel-item" style="background-image: url(images/slide2.png)">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3 class="display-4">Construa o que você quiser</h3>
-                    <p class="lead">Deixe sua imaginação solta. <br>Nós não temos nenhum bloco removido do jogo.</p>
+                <div class="mySlides fade">
+                    <img alt="" src="imgs/slide2.png" style="width:100%">
                 </div>
-            </div>
-            <div class="carousel-item" style="background-image: url(images/slide3.png)">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3 class="display-4">Faça parte da família EterniaServer</h3>
-                    <p class="lead">Uma vez nela, você não irá querer sair.</p>
+                <div class="mySlides fade">
+                    <img alt="" src="imgs/slide3.png" style="width:100%">
                 </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
+            <section class="ip">
+                Venha jogar conosco, <b>jogar.eterniaserver.com.br</b> e com mais outros <span data-playercounter-ip="jogar.eterniaserver.com.br">Offline</span> jogadores online.
+            </section>
+            <section class="qualidades">
+                <img class="cards" src="imgs/features1.png" alt="">
+                <img class="cards" src="imgs/features2.png" alt="">
+                <img class="cards" src="imgs/features3.png" alt="">
+            </section>
+        </main>
+        <footer>
+            <div class="rodape">
+                © 2020 Copyright: EterniaServer
             </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Próximo</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-    </div>
-</header>
-<div class="alert alert-success" role="alert" style="padding-top: 1%">
-    Venha jogar conosco, <b>jogar.eterniaserver.com.br</b> e com mais outros
-    <b><span data-playercounter-ip="jogar.eterniaserver.com.br:25565">Server Offline</span></b> jogadores online.
-</div>
-<section class="py-5" style="margin-top: 1%">
-    <h4 class="display-4">O que é o EterniaServer?</h4>
-    <p class="lead">É um dos melhores servidores sobrevivência que existe atualmente!</p>
-</section>
-<div class="row textgray center" style="text-align: center">
-    <div class="feature-box col-lg-4">
-        <i class="fas fa-memory fa-4x main-f-color" style="margin-top: 5%; box-shadow: none;"></i>
-        <h3 class="textblack">Estabilidade</h3>
-        <p class="descbox textgray">
-            O foco principal do servidor é manter a estabilidade e para isso ser possível, o
-            servidor tem a base própria, com plugins próprios e com manuteções constantes.
-        </p>
-    </div>
-    <div class="feature-box col-lg-4">
-        <i class="fas fa-archive fa-4x main-f-color" style="margin-top: 5%; box-shadow: none;"></i>
-        <h3 class="textblack">Mapa Continuo</h3>
-        <p class="descbox textgray">
-            O nosso servidor tem como principal filosofia a continuação do mapa principal,
-            não pretendemos reseta-lo, somente se for EXTREMAMENTE NECESSÁRIO.
-        </p>
-    </div>
-    <div class="feature-box col-lg-4">
-        <i class="fas fa-heart fa-4x main-f-color" style="margin-top: 5%; box-shadow: none;"></i>
-        <h3 class="textblack">Comunidade</h3>
-        <p class="descbox textgray">
-            O forte do EterniaServer é a nossa comunidade amigável! Todos os jogadores (ou quase :P)
-            estão dispostos a ajudar junto com a nossa Staff.
-        </p>
-    </div>
-</div>
-<section class="py-5" style="margin-top: 1%;">
-    <h4 class="display-4">Novidades</h4>
-    <p class="lead">jogar.eterniaserver.com.br</p>
-</section>
-<section>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="row">
-                    <div class="col left col-sm-12 col-lg-6">
-                        <img src="images/logo.png" alt="" srcset="" class="img-news">
-                    </div>
-                    <div class="col left col-sm-12 col-lg-6">
-                        <h4>
-                            Mudanças no plugin EterniaServer
-                        </h4>
-                        <p>
-                            Que o EterniaServer passa por constantes atualizações não é
-                            novidade alguma, mas recentemente toda a base do plugin
-                            EterniaServer (sim, eu dei o mesmo nome do servidor para o
-                            meu plugin) está sendo refeita em busca de otimização. (Não
-                            que seja necessário, já que o TPS continua em 20)
-                        </p>
-                        <h4>
-                            Slimefun, LiteXpansion, ChestTerminal e ExoticGarden.
-                        </h4>
-                        <p>
-                            Após um tempo testando, está decidido que o servidor irá ter
-                            como o foco do lategame (fim de jogo) esses plugins.
-                            <br>
-                            Sendo assim, somente em ocasiões MUITO necessárias iremos
-                            desativar algum item desses plugins.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-</section>
-<!--Qualidades-->
-<section class="py-5" style="margin-top: 1%;">
-    <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <h4 class="display-4">Qualidades</h4>
-            <p class="lead">Algumas qualidades do EterniaServer</p>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="row center">
-        <div class="textblack main-f-color featureboxes col-sm-12 col-md-4">
-            <img class="img-featureboxes" src="images/features1.png" alt="" srcset="" style="padding-top: 10px;">
-            <h5 class="textblack">Economia Realista</h5>
-            <p class="textblack1">
-                O servidor preza por uma economia balanceada.
-                <br>
-                Ganhe dinheiro de vários modos diferentes no servidor.
-            </p>
-        </div>
-        <div class="textblack main-f-color featureboxes col-sm-12 col-md-4">
-            <img class="img-featureboxes" src="images/features2.png" alt="" srcset="" style="padding-top: 10px;">
-            <h5 class="textblack">Proteção</h5>
-            <p class="textblack1">
-                Não se preocupe, sua casa será só sua.
-                <br>
-                Com o GriefPrevention você não irá perder nada para outros jogadores.
-            </p>
-        </div>
-        <div class="textblack main-f-color featureboxes col-sm-12 col-md-4">
-            <img class="img-featureboxes" src="images/features3.png" alt="" srcset="" style="padding-top: 10px;">
-            <h5 class="textblack">Diversão</h5>
-            <p class="textblack1">
-                Nosso servidor preza pela diversão dos jogadores!
-                <br>
-                Não tenha medo de entrar no servidor e logo ser morto por alguém.
-            </p>
-        </div>
-    </div>
-</section>
-<br>
-<footer class="page-footer font-small bg-dark pt-4">
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <p class="textgray">
-                    O EterniaServer mantém a nostalgia de
-                    antigos servidores de sobrevivência, sem deixar para
-                    trás qualquer conteudo novo.
-                </p>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="row">
-                    <div class="col-sm-12 col-md-3">
-                        <a class="medias" href="https://discord.gg/Qs3RxMq">
-                            <i class="fab fa-discord fa-2x" style="color: #7289DA;"></i>
-                            Discord
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-3">
-                        <a class="medias" href="https://www.facebook.com/eterniaserver">
-                            <i class="fab fa-facebook-f fa-2x" style="color: #4267B2;"></i>
-                            Facebook
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <div class="footer-copyright page-footer text-center py-3" style="color: white; background-color: rgb(37, 41, 46);">
-        © 2020 Copyright: EterniaServer
-    </div>
-</footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        </footer>
+    </article>
+    <script>
+    </script>
+    <script src="js/menu.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
 </body>
 </html>
