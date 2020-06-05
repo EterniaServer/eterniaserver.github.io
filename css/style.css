@@ -10,6 +10,14 @@ body, html {
     height: 100%;
 }
 
+header {
+    top: 0;
+    left: 0;
+    background-color: #2b2b2b;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 article {
     min-height: 100%;
     display: grid;
@@ -17,12 +25,17 @@ article {
     grid-template-columns: 100%;
 }
 
-header {
-    top: 0;
+footer {
+    font-size: 2vh;
+    margin-top: 5%;
     left: 0;
-    background-color: #2b2b2b;
+    bottom: 0;
     width: 100%;
-    box-sizing: border-box;
+    background-color: #2b2b2b;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Início da configuração do ip */
@@ -55,16 +68,3 @@ header {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 /* Final da configuração das qualidades */
-
-/* Início da configuração do rodape */
-.rodape {
-    background-color: #2b2b2b;
-    text-align: center;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    padding: 10px 10px 10px 10px;
-    font-size: 2vh;
-    color: #FFFFFF;
-}
-/* Final da configuração do rodape */
