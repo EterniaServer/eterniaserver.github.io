@@ -57,7 +57,7 @@ footer a:hover {
 
 /* Início da configuração do ip */
 .ip {
-    font-size: 3vh;
+    font-size: 18px;
     border: 1px solid;
     display: block;
     color: #74b16f;
@@ -69,7 +69,6 @@ footer a:hover {
 }
 /* Final da configuração do ip */
 .qualidades {
-    margin-top: 10px;
     display: table;
     align-items: center;
     justify-content: space-evenly;
@@ -84,6 +83,26 @@ footer a:hover {
     display: table-cell;
     text-align: justify;
     text-justify: auto;
+}
+
+.qua-text {
+    display: table-row;
+    text-align: center;
+}
+
+.qualidades-text {
+    text-align: center;
+}
+
+.qualidades-text h3 {
+    margin-top: 10px;
+    color: #74b16f;
+    padding-top: 10px;
+    font-size: 28px;
+}
+
+.qualidades-text p {
+    margin: 10px;
 }
 
 .cards:hover {
