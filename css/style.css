@@ -61,14 +61,17 @@ footer {
 /* Final da configuração do ip */
 .qualidades {
     margin-top: 10px;
-    display: flex;
+    display: table;
     align-items: center;
     justify-content: space-evenly;
+    border-spacing: 10px;
+    border-collapse: separate;
 }
 
 .cards {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
+    display: table-cell;
 }
 
 .cards:hover {
