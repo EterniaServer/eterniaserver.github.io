@@ -1,9 +1,9 @@
 const x = document.getElementById("demo");
 
 function changeState() {
-    if (x.className.indexOf("w3-show") === -1) {
-        x.className += " w3-show";
+    if (x.className.indexOf("show") === -1) {
+        x.className += " show";
     } else {
-        x.className = x.className.replace(" w3-show", "");
+        x.className = x.className.replace(" show", "");
     }
 }

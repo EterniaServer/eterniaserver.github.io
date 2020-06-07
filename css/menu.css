@@ -1,9 +1,9 @@
-.w3-bar {
+.navbar {
     text-decoration: none;
     width: 100%;
     overflow: hidden
 }
-.w3-bar .w3-bar-item {
+.navbar .navbar-item {
     padding: 8px 16px;
     float: left;
     width: auto;
@@ -11,7 +11,7 @@
     display: block;
 }
 
-.w3-button {
+.button {
     height: 100%;
     border: none;
     display: inline-block;
@@ -25,17 +25,17 @@
     color: #ffffff;
 }
 
-.w3-button:hover {
+.button:hover {
     color: #FFFFFF;
     background: #4267B2;
 }
 
-.w3-button.active {
+.button.active {
     color: #FFFFFF;
     background: #74b16f;
 }
 
-.w3-bar-block .w3-bar-item {
+.navbar-block .navbar-item {
     width:100%;
     display:block;
     padding:8px 16px;
@@ -44,28 +44,30 @@
     white-space:normal;
     float:none;
 }
-.w3-hide {
+
+.hide {
     display: none!important;
 }
-.w3-show {
+
+.show {
     display: block!important;
 }
 
-.w3-right {
+.right {
     float: right!important;
 }
 @media (max-width: 600px) {
-    .w3-hide-small {
+    .hide-small {
         display:none!important;
     }
 }
 @media (min-width: 993px) {
-    .w3-hide-large {
+    .hide-large {
         display: none!important;
     }
 }
 @media (max-width: 992px) and (min-width: 601px) {
-    .w3-hide-medium {
+    .hide-medium {
         display: none!important;
     }
 }
