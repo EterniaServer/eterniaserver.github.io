@@ -1,4 +1,7 @@
-let slideIndex = 0;
+const slides = document.getElementsByClassName("mySlides"),
+    dots = document.getElementsByClassName("dot");
+let slideIndex = 0,
+    i = 1;
 run();
 
 function plusSlides(n) {
@@ -6,9 +9,6 @@ function plusSlides(n) {
 }
 
 function showSlides(n) {
-    let i;
-    const slides = document.getElementsByClassName("mySlides");
-    const dots = document.getElementsByClassName("dot");
     if (n > slides.length) {
         slideIndex = 1
     }
@@ -26,8 +26,6 @@ function showSlides(n) {
 }
 
 function run() {
-    let i;
-    const slides = document.getElementsByClassName("mySlides");
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
@@ -38,14 +36,3 @@ function run() {
     slides[slideIndex-1].style.display = "block";
     setTimeout(run, 6000);
 }
-
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('nav');
-menuToggle.addEventListener('click', () => {
-    if (nav.className !== 'active') {
-        nav.className = 'active';
-    }
-    else {
-        nav.className = '';
-    }
-});
