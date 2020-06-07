@@ -25,6 +25,14 @@ article {
     grid-template-columns: 100%;
 }
 
+main h4 {
+    color: #74b16f;
+}
+
+main p {
+    color: #AAAAAA;
+}
+
 footer {
     font-size: 2vh;
     margin-top: 5%;
@@ -52,19 +60,22 @@ footer {
 }
 /* Final da configuração do ip */
 .qualidades {
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .cards {
-    margin-top: 40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 6%;
 }
 
 .cards:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.img-card {
+    height: 100px;
 }
 /* Final da configuração das qualidades */
