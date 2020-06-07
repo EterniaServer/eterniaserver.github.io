@@ -83,7 +83,7 @@ footer a:hover {
     transition: 0.3s;
     display: table-cell;
     text-align: justify;
-    text-justify: inter-character;
+    text-justify: auto;
 }
 
 .cards:hover {
