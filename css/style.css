@@ -76,6 +76,26 @@ footer a:hover {
     border-collapse: separate;
 }
 
+.server {
+    display: table;
+    align-items: center;
+    justify-content: space-evenly;
+    border-collapse: separate;
+}
+
+.box {
+    display: table-cell;
+    text-align: justify;
+    text-justify: auto;
+}
+
+.boxs {
+    padding: 10px 10px 10px 10px;
+    display: table-cell;
+    text-align: justify;
+    text-justify: auto;
+}
+
 .cards {
     padding: 10px 10px 10px 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
