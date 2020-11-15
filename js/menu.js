@@ -1,9 +1,14 @@
-const x = document.getElementById("demo");
+var state = 0;
 
-function changeState() {
-    if (x.className.indexOf("show") === -1) {
-        x.className += " show";
+function openMenu() {
+    if (state == 0) {
+        document.getElementById("menu_button").classList.toggle("change");
+        document.getElementById("nav_menu").style.width = "100%";
+        state = 1;
     } else {
-        x.className = x.className.replace(" show", "");
+        document.getElementById("menu_button").classList.toggle("change");
+        document.getElementById("nav_menu").style.width = "0%";
+        state = 0;
     }
+
 }

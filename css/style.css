@@ -3,133 +3,102 @@
     font-family: "Lucida C", monospace;
 }
 
-body, html {
-    display: grid;
-    background: #333333;
-    width: 100%;
-    height: 100%;
+html {
+    background-color: #0f0f11;
 }
 
 header {
-    top: 0;
-    left: 0;
-    background-color: #2b2b2b;
-    width: 100%;
-    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin-top: 0px;
 }
 
-article {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 100%;
-}
-
-main h4 {
-    color: #74b16f;
-}
-
-main p {
-    color: #AAAAAA;
+main {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    top: 70px;
 }
 
 footer {
-    font-size: 2vh;
-    margin-top: 5%;
-    background-color: #2b2b2b;
-    color: #FFFFFF;
-    display: table;
-    align-items: center;
-    justify-content: space-evenly;
-    border-spacing: 30px 6px;
-    border-collapse: separate;
+    background-color: #1e2535;
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    padding: 2px 16px 2px 16px;
+    -moz-box-shadow: 0 0 3px #232735;
+    -webkit-box-shadow: 0 0 3px #232735;
+    box-shadow: 0 0 3px #232735;
 }
 
 footer a {
-    display: table-cell;
     text-decoration: none;
-    color: #FFFFFF;
+    font-size: 14px;
+    color: #f2f2f2;
+}
+
+footer a.right-footer {
+    float: right;
 }
 
 footer a:hover {
-    color: #74b16f;
+    color: #7df110;
 }
 
-/* Início da configuração do ip */
-.ip {
+footer img {
+    float: right;
+    width: 18px;
+    padding: 0 4px 0 0;
+}
+
+section.quality {
     font-size: 18px;
-    border: 1px solid;
-    display: block;
-    color: #74b16f;
-    background-color: #2b2b2b;
-    border-radius: 6px;
-    padding: 10px 10px 10px 10px;
+    color: #7df110;
+    width: 100%;
+    background-color: #161616;
     text-align: center;
     margin: auto;
-}
-/* Final da configuração do ip */
-.qualidades {
-    display: table;
-    align-items: center;
-    justify-content: space-evenly;
-    border-spacing: 10px;
-    border-collapse: separate;
+    -moz-box-shadow: 0 0 3px #141414;
+    -webkit-box-shadow: 0 0 3px #141414;
+    box-shadow: 0 0 3px #141414;
 }
 
-.server {
-    display: table;
-    align-items: center;
-    justify-content: space-evenly;
-    border-collapse: separate;
-}
-
-.box {
-    display: table-cell;
-    text-align: justify;
-    text-justify: auto;
-}
-
-.boxs {
+article.jogadores {
     padding: 10px 10px 10px 10px;
-    display: table-cell;
-    text-align: justify;
-    text-justify: auto;
 }
 
-.cards {
-    padding: 10px 10px 10px 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    display: table-cell;
-    text-align: center;
-    text-justify: auto;
+table {
+    padding: 20px 0 20px 0;
+    table-layout: fixed;
+    width: 100%;
 }
 
-.qua-text {
-    display: table-row;
-    text-align: center;
+table caption {
+    padding-top: 20px;
+    color: #f2f2f2;
+    font-size: 40px;
+    font-weight: bold;
 }
 
-.qualidades-text {
-    text-align: center;
+tr {
+    width: 30%;
 }
 
-.qualidades-text h3 {
-    margin-top: 10px;
-    color: #74b16f;
-    padding-top: 10px;
-    font-size: 28px;
+th img {
+    width: 192px;
 }
 
-.qualidades-text p {
-    margin: 10px;
+th.text {
+    color: #949494;
+    font-size: 20px;
 }
 
-.cards:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+th.link {
+    color: #7df110;
+    font-size: 18px;
 }
-
-.img-card {
-    height: 100px;
-}
-/* Final da configuração das qualidades */
