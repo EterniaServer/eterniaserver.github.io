@@ -1,104 +1,156 @@
 * {
-    margin: 0;
     font-family: "Lucida C", monospace;
 }
 
-html {
-    background-color: #0f0f11;
+.carousel-item {
+    height: auto;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-header {
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    margin-top: 0px;
+.list-style {
+    padding: 0!important;
+    margin: 0!important;
+    color: #ffffff;
+    list-style: none;
+    text-shadow: 1px 1px #0e0e0e
+}
+
+.list-item {
+    border-radius: 20px;
+    filter: drop-shadow(1px 1px 1px rgb(0, 0, 0));
+    padding-bottom: 4px;
+    width: auto;
+}
+
+.card-border {
+    padding-top: 10px;
+    pointer-events:none;
+    box-shadow: none;
+}
+
+.discord {
+    color: #7289DA;
+    padding-right: 8px;
+}
+
+.youtube {
+    color: red;
+    padding-right: 8px;
+}
+
+.twitter {
+    color: #1DA1F2;
+    padding-right: 8px;
+}
+
+.facebook {
+    color: #4267B2;
+    padding-right: 8px;
+}
+
+.ip-show {
+    padding-top: 20px;
+    background-color: #161616!important;
+    -moz-box-shadow: 0 0 3px #141414!important;
+    -webkit-box-shadow: 0 0 3px #141414!important;
+    box-shadow: 0 0 3px #141414!important;
+    border-radius: 0px!important;
+    border-color: #141414!important;
+    color: #e6e6e6!important;
+}
+
+.logo-size {
+    width: 50px;
+    padding-right: 10px;
+}
+
+.main-f-color {
+    color: rgb(112, 215, 94);
+    transition: 0.4s;
+}
+
+.main-f-color:hover {
+    box-shadow: 0 0 7px 2px rgb(65, 179, 45);   
+    color: rgb(65, 179, 45);   
+    transition: 0.4s; 
+}
+
+.textgray {
+    color: gray;
+}
+
+.dark-background {
+    background-color: #1d1d1d;
+}
+
+.black-background {
+    background-color: #161616;
+}
+
+.white {
+    color: #e2e2e2;
+}
+
+.green {
+    color: #7df110;
+}
+
+.light-gray {
+    color: #b9b9b9;
+}
+
+.light-blue {
+    color: #4d89d8;
 }
 
 main {
-    position: relative;
-    left: 0px;
-    right: 0px;
-    top: 70px;
+  background-color: #0f0f11;
+  padding-bottom: 20px;
 }
 
-footer {
-    background-color: #1e2535;
-    position: fixed;
-    z-index: 1;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    margin-bottom: 0px;
-    text-align: left;
-    padding: 2px 16px 2px 16px;
-    -moz-box-shadow: 0 0 3px #232735;
-    -webkit-box-shadow: 0 0 3px #232735;
-    box-shadow: 0 0 3px #232735;
+.center {
+  text-align: center;
 }
 
-footer a {
-    text-decoration: none;
-    font-size: 14px;
-    color: #f2f2f2;
+.featureboxes {
+  border: 0px solid rgb(72, 150, 78);
+  transition: 0.15s;
+  width: auto;
+  height: auto;
+  text-align: center;
 }
 
-footer a.right-footer {
-    float: right;
+.featureboxes:hover {
+  transition: 0.15s;
+  transform: scale(1.01);
+  border-radius: 3px;
+  text-align: center;
 }
 
-footer a:hover {
-    color: #7df110;
+.playercount {
+  display: inline-block;
 }
 
-footer img {
-    float: right;
-    width: 18px;
-    padding: 0 4px 0 0;
+.img-news {
+  max-width: 600px;
+  max-height: 350px;
 }
 
-section.quality {
-    font-size: 18px;
-    color: #7df110;
-    width: 100%;
-    background-color: #161616;
-    text-align: center;
-    margin: auto;
-    -moz-box-shadow: 0 0 3px #141414;
-    -webkit-box-shadow: 0 0 3px #141414;
-    box-shadow: 0 0 3px #141414;
+
+.medias {
+  color: gray;
+  text-decoration: none;
+  text-align: center;
 }
 
-article.jogadores {
-    padding: 10px 10px 10px 10px;
-}
-
-table {
-    padding: 20px 0 20px 0;
-    table-layout: fixed;
-    width: 100%;
-}
-
-table caption {
-    padding-top: 20px;
-    color: #f2f2f2;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-tr {
-    width: 30%;
-}
-
-th img {
-    width: 192px;
-}
-
-th.text {
-    color: #949494;
-    font-size: 20px;
-}
-
-th.link {
-    color: #7df110;
-    font-size: 18px;
+.medias:hover 
+{
+   color: gray;
+   text-decoration: none; 
+   cursor: pointer;  
 }
