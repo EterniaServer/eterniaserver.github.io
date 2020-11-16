@@ -75,13 +75,16 @@
 }
 
 .main-f-color:hover {
-    box-shadow: 0 0 7px 2px rgb(65, 179, 45);   
-    color: rgb(65, 179, 45);   
+    box-shadow: 0 0 7px 2px #7df110;
     transition: 0.4s; 
 }
 
 .textgray {
     color: gray;
+}
+
+hr {
+    background-color: #141414;
 }
 
 .dark-background {
@@ -90,6 +93,13 @@
 
 .black-background {
     background-color: #161616;
+}
+
+.card-style {
+    padding: 15px 15px 15px 15px!important;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #141414;
 }
 
 .white {
@@ -118,7 +128,6 @@ main {
 }
 
 .featureboxes {
-  border: 0px solid rgb(72, 150, 78);
   transition: 0.15s;
   width: auto;
   height: auto;
