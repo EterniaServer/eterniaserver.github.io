@@ -66,7 +66,7 @@
 
 .logo-size {
     width: 50px;
-    height: auto;
+    height: 40px;
     padding-right: 10px;
 }
 
@@ -144,8 +144,8 @@ main {
 }
 
 .img-news {
-  max-width: 600px;
-  height: auto;
+  width: 550px;
+  height: 350px;
   border-radius: 0px!important;
 }
 
