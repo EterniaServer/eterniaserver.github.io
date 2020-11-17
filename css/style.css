@@ -22,7 +22,7 @@
 
 .list-item {
     border-radius: 20px;
-    filter: drop-shadow(1px 1px 1px rgb(0, 0, 0));
+    filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
     padding-bottom: 4px;
     width: auto;
 }
