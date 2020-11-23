@@ -2,6 +2,15 @@
     font-family: "Lucida C", monospace;
 }
 
+iframe {
+    width: 75%;
+    height: 1000px;
+    display: block;
+    padding-top: 0rem;
+    padding-bottom: 10rem;
+    border: none;
+}
+
 .carousel-item {
     height: auto;
     min-height: 350px;
