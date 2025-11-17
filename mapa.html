@@ -1,17 +1,15 @@
 <!doctype html>
 <html lang="pt-br">
-
     <head>
         <title>EterniaServer</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="EterniaServer, survival de verdade!">
-        <meta http-equiv="Cache-control" content="public">
         <meta name="ip" content="jogar.eterniaserver.com.br">
         <meta name="theme-color" content="#161616"/>
         <link rel="shortcut icon" href="favicon.ico" />
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
     </head>
 
     <body>
@@ -19,13 +17,12 @@
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top container-fluid dark-background">
                 <a href="index.html"><img src="img/serverlogo.png" width="50px" height="40px" class="logo-size" alt="Logo"></a>
                 <a class="navbar-brand" href="index.html">EterniaServer</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" role="button" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <ul class="collapse navbar-collapse navbar-nav ml-auto" id="navbarResponsive">
-                    <li class="nav-item"><a class="nav-link" href="index.html">INÍCIO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="shop.html">LOJA</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="mapa.html">MAPA</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="index.html">INÍCIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mapa.html">MAPA</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">REGRAS</a></li>
                 </ul>
             </nav>
@@ -43,25 +40,30 @@
                 <article class="col-sm-6 col-md-6">
                     <h1 class="white">Sobre</h1>
                     <p class="white">A proposta de criar o EterniaServer começou em 2013, com o nome de ResgatGames Server.
-                        Possuia o simples objetivo de ser um servidor sobrevivência.
-                        Com o tempo novas ideias foram surgindo e então o server passou a ser um material de estudo.
+                        Possuía o simples objetivo de ser um servidor sobrevivência.
+                        Com o tempo novas ideias foram surgindo e então o servidor passou a ser um material de estudo.
                     </p>
                 </article>
                 <article class="col-sm-6 col-md-6">
                     <h1 class="white">Rede Sociais</h1>
                     <a class="medias white" href="https://discord.com/invite/Qs3RxMq"><em class="fab fa-discord fa-2x discord"></em>Discord</a>
-                    <a class="medias white" href="#"><em class="fab fa-youtube fa-2x youtube"></em>Youtube</a>
-                    <a class="medias white" href="#"><em class="fab fa-twitter fa-2x twitter"></em>Twitter</a>
+                    <a class="medias white" href="https://www.youtube.com/@yurinmds"><em class="fab fa-youtube fa-2x youtube"></em>Youtube</a>
                     <a class="medias white" href="https://www.facebook.com/EterniaServer/"><em class="fab fa-facebook fa-2x facebook"></em>Facebook</a>
                 </article>
             </section>
             <section class="footer-copyright black-background page-footer text-center py-3 white">
-                © 2019-2020 Copyright <a href="index.html" class="green">EterniaServer</a>
+                🄯 2019-<span id="currentYear">2025</span>
+                Copyleft <a href="index.html" class="green">EterniaServer</a>
             </section>
         </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/bootstrap.js"></script>
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script>
+            let currentYearElement = document.getElementById('currentYear');
+            if (currentYearElement) {
+                currentYearElement.textContent = new Date().getFullYear();
+            }
+        </script>
     </body>
-
 </html>

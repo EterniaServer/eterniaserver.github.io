@@ -1,17 +1,15 @@
 <!doctype html>
 <html lang="pt-br">
-
     <head>
         <title>EterniaServer</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="EterniaServer, survival de verdade!">
-        <meta http-equiv="Cache-control" content="public">
         <meta name="ip" content="jogar.eterniaserver.com.br">
         <meta name="theme-color" content="#161616"/>
         <link rel="shortcut icon" href="favicon.ico" />
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
     </head>
 
     <body>
@@ -19,61 +17,60 @@
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top container-fluid dark-background">
                 <a href="index.html"><img src="img/serverlogo.png" width="50px" height="40px" class="logo-size" alt="Logo"></a>
                 <a class="navbar-brand" href="index.html">EterniaServer</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" role="button" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <ul class="collapse navbar-collapse navbar-nav ml-auto" id="navbarResponsive">
                     <li class="nav-item active"><a class="nav-link" href="index.html">INÍCIO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://eterniaserver.tebex.io/" target="_blank">LOJA</a></li>
                     <li class="nav-item"><a class="nav-link" href="mapa.html">MAPA</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">REGRAS</a></li>
                 </ul>
             </nav>
 
-            <section id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <ul class="carousel-inner borderless list-style" role="list">
-                    <li class="carousel-item active" style="background-image: url(img/pei1.jpeg);">
+            <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner borderless list-style" role="list">
+                    <div class="carousel-item active" style="background-image: url(img/pei1.jpeg);">
                         <figure class="carousel-caption d-none d-md-block">
-                            <h1>Bem vindo ao EterniaServer!</h1>
+                            <h1>Bem-vindo ao EterniaServer!</h1>
                             <p class="lead">Desfrute de um servidor original e venha fazer parte da família Eternia!</p>
                             <figcaption>*Loja do servidor*</figcaption>
                         </figure>
-                    </li>
-                    <li class="carousel-item" style="background-image: url(img/pei2.jpeg)">
+                    </div>
+                    <div class="carousel-item" style="background-image: url(img/pei2.jpeg)">
                         <figure class="carousel-caption d-none d-md-block">
                             <h1>Sinta-se livre!</h1>
-                            <p class="lead">Deixe sua imaginação ti guiar.<br>Com diversos items e mecânicas novas sua imaginação é o limite!</p>
+                            <p class="lead">Deixe a sua imaginação ti guiar.<br>Com diversos items e mecânicas novas sua imaginação é o limite!</p>
                             <figcaption>*Construção de um jogador*</figcaption>
                         </figure>
-                    </li>
-                    <li class="carousel-item" style="background-image: url(img/pei3.jpeg)">
+                    </div>
+                    <div class="carousel-item" style="background-image: url(img/pei3.jpeg)">
                         <figure class="carousel-caption d-none d-md-block">
-                            <h1>Faça parte de nossa Comunidade!</h1>
+                            <h1>Faça parte da nossa Comunidade!</h1>
                             <p class="lead">Aproveite de uma comunidade amigável e familiar!</p>
                             <figcaption>*Construção de um jogador*</figcaption>
                         </figure>
-                    </li>
-                </ul>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </section>
         </header>
 
         <main>
             <section class="container-fluid center ip-show alert alert-success" role="alert">
-                Venha jogar conosco em <strong class="green" id="ip"></strong> com outros
-                <strong class="green"><span data-playercounter-ip="jogar.eterniaserver.com.br:25565">Server em Manutenção</span></strong> jogadores online.
+                Venha jogar conosco em <strong class="green" id="ip">eterniaserver.com.br</strong> com outros
+                <strong class="green"><span data-playercounter-ip="eterniaserver.com.br">Servidor em Manutenção</span></strong> jogadores.
             </section>
             <section class="py-2 container-fluid center">
                 <h1 class="green">Por que o EterniaServer?</h1>
@@ -101,41 +98,27 @@
                     <h1 class="green">Novidades</h1>
                     <p class="white">Noticias mais recentes sobre o EterniaServer!</p>
                 </article>
-                <article id="carouselExampleControls" class="carousel slide carousel-inner" data-ride="carousel">
-                    <ul class="carousel-inner list-style">
-                        <li class="carousel-item active">
-                            <h2 class="light-blue">Missões!</h3>
-                            <img src="img/missions.jpeg" alt="Missões" width="550px" height="350px" class="img-news list-item">
+                <article id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner list-style">
+                        <div class="carousel-item active">
+                            <h2 class="light-blue">Estamos de volta!</h2>
+                            <img src="img/missions.jpeg" alt="Eternia Again!" width="550px" height="350px" class="img-news list-item">
                             <p class="white">
-                                Se prepare para a guerra! Complete as missões e objetivos dos NPCs do servidor!
-                                <br>
-                                Se torne um herói de verdade!
+                                Olá novamente!
                             </p>
                             <p class="white">
-                                Cada missão possui sua recompensa especifica além de um sistema de rank.
+                                Estamos voltando ao jogo!
                             </p>
-                        </li>
-                        <li class="carousel-item">
-                            <h2 class="light-blue">A Revolta dos Pets!</h3>
-                            <img src="img/pets.jpeg" alt="Pets" width="550px" height="350px" class="img-news list-item">
-                            <p class="white">
-                                Os pets se cansaram, cansaram de serem chamados de inúteis, cansaram de serem usados somente para carregar items. Está na hora de uma mudança...
-                                <br>
-                                Se prepare para a REVOLUÇÃO!
-                            </p>
-                            <p class="white">
-                                Novas classes foram criadas, que se adequam a cada tipo de pet. O sistema de evolução se tornou mais interessante!
-                            </p>
-                        </li>
-                    </ul>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </article>
             </section>
             <hr>
@@ -154,34 +137,9 @@
                         <p class="white">Sistema de proteção próprio baseado no GriefPrevention com flags para não precisar ter aborrecimentos com grief.</p>
                     </li>
                     <li class="main-f-color featureboxes col-sm-12 col-md-4">
-                        <em class="fas fa-space-shuttle fa-4x main-f-color card-border"></em>
-                        <h3 class="light-blue">Slimefun</h3>
-                        <p class="white">Plugin Slimefun com várias extensões para transformar o Minecraft Vanilla em um modpack sem precisar baixar nenhum mod!</p>
-                    </li>
-                    <li class="main-f-color featureboxes col-sm-12 col-md-4">
-                        <em class="fas fa-ring fa-4x main-f-color card-border"></em>
-                        <h3 class="light-blue">Casamento</h3>
-                        <p class="white">Jogando com seu amor? Então aproveite de vários benefícios para casados!</p>
-                    </li>
-                    <li class="main-f-color featureboxes col-sm-12 col-md-4">
-                        <em class="fas fa-journal-whills fa-4x main-f-color card-border"></em>
-                        <h3 class="light-blue">Missões</h3>
-                        <p class="white">Complete uma sequência de missões para ajudar os cidadões de Eternia.</p>
-                    </li>
-                    <li class="main-f-color featureboxes col-sm-12 col-md-4">
                         <em class="fas fa-store fa-4x main-f-color card-border"></em>
                         <h3 class="light-blue">Lojas</h3>
                         <p class="white">Compre na loja do servidor ou na loja de outros jogadores, mas e se você criar sua própria loja?</p>
-                    </li>
-                    <li class="main-f-color featureboxes col-sm-12 col-md-4">
-                        <em class="fas fa-cubes fa-4x main-f-color card-border"></em>
-                        <h3 class="light-blue">Cross-Plataforma</h3>
-                        <p class="white">Não possui o Minecraft Java Version? Sem problemas, você pode entrar no server pelo Bedrock Version!</p>
-                    </li>
-                    <li class="main-f-color featureboxes col-sm-12 col-md-4">
-                        <em class="fas fa-paw fa-4x main-f-color card-border"></em>
-                        <h3 class="light-blue">Pets</h3>
-                        <p class="white">Tenha seus próprios pets e escolha uma classe para cada um deles!</p>
                     </li>
                     <li class="main-f-color featureboxes col-sm-12 col-md-4">
                         <em class="fas fa-khanda fa-4x main-f-color card-border"></em>
@@ -189,19 +147,9 @@
                         <p class="white">Tenha habilidades especiais e passivas para tornar sua jogativa mais interativa!</p>
                     </li>
                     <li class="main-f-color featureboxes col-sm-12 col-md-4">
-                        <em class="fas fa-users fa-4x main-f-color card-border"></em>
-                        <h3 class="light-blue">Clans</h3>
-                        <p class="white">Tenha seu próprio clan e monte sua base.</p>
-                    </li>
-                    <li class="main-f-color featureboxes col-sm-12 col-md-4">
                         <em class="fas fa-kaaba fa-4x main-f-color card-border"></em>
                         <h3 class="light-blue">Caixas</h3>
                         <p class="white">Sistema de caixas de itens com chaves que podem ser recebidas votando e jogando!</p>
-                    </li>
-                    <li class="main-f-color featureboxes col-sm-12 col-md-4">
-                        <em class="fas fa-hand-sparkles fa-4x main-f-color card-border"></em>
-                        <h3 class="light-blue">Encantamentos Únicos</h3>
-                        <p class="white">O EterniaServer possui encantamentos únicos desde explosões mágicas a criações instantânea!</p>
                     </li>
                 </ol>
             </section>
@@ -219,18 +167,24 @@
                 <article class="col-sm-6 col-md-6">
                     <h1 class="white">Rede Sociais</h1>
                     <a class="medias white" href="https://discord.com/invite/Qs3RxMq"><em class="fab fa-discord fa-2x discord"></em>Discord</a>
-                    <a class="medias white" href="#"><em class="fab fa-youtube fa-2x youtube"></em>Youtube</a>
-                    <a class="medias white" href="#"><em class="fab fa-twitter fa-2x twitter"></em>Twitter</a>
+                    <a class="medias white" href="https://www.youtube.com/@yurinmds"><em class="fab fa-youtube fa-2x youtube"></em>Youtube</a>
                     <a class="medias white" href="https://www.facebook.com/EterniaServer/"><em class="fab fa-facebook fa-2x facebook"></em>Facebook</a>
                 </article>
             </section>
             <section class="footer-copyright black-background page-footer text-center py-3 white">
-                © 2019-2020 Copyright <a href="index.html" class="green">EterniaServer</a>
+                🄯 2019-<span id="currentYear">2025</span>
+                Copyleft <a href="index.html" class="green">EterniaServer</a>
             </section>
         </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/bootstrap.js"></script>
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script>
+            let currentYearElement = document.getElementById('currentYear');
+            if (currentYearElement) {
+                currentYearElement.textContent = new Date().getFullYear();
+            }
+        </script>
     </body>
 </html>
